@@ -1,0 +1,76 @@
+@import '~@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '~@fortawesome/fontawesome-free/scss/regular.scss';
+@import '~@fortawesome/fontawesome-free/scss/solid.scss';
+@import '~@fortawesome/fontawesome-free/scss/brands.scss';
+
+@import "base";
+@import "override";
+@import "variables";
+@import "fonts";
+@import "mixins/button";
+@import "components";
+
+* {
+    font-family: "Gilroy", sans-serif;
+}
+
+$themes: (
+    navy-blue: (
+        color-mapper: $color-mapper,
+        button: red,
+    )
+);
+
+@function themed($key) {
+    @return map-get($theme-map, $key);
+}
+
+@mixin define_theme($themes) {
+    @each $theme, $map in $themes {
+        .theme-#{$theme} & {
+            $theme-map: () !global;
+            @each $key, $submap in $map {
+                $value: map-get(map-get($themes, $theme), '#{$key}');
+                $theme-map: map-merge($theme-map, ($key: $value)) !global;
+            }
+            @content;
+            $theme-map: null !global;
+        }
+    }
+}
+
+
+body {
+    min-height: 100vh;
+
+    .sidebar {
+        &.close {
+            ~ .content {
+                left: 88px;
+                width: calc(100% - 88px);
+            }
+        }
+    }
+
+    .content {
+        position: absolute;
+        top: 0;
+        left: 280px;
+        width: calc(100% - 280px);
+        transition: all .2s ease;
+        height: 100vh;
+    }
+}
+
+.app-wrapper {
+    button {
+        &.primary {
+            @include define_theme($themes) {
+                color: themed('button');
+                @include btn-primary(themed('color-mapper'), 'navy-blue');
+            }
+        }
+    }
+}
+
+

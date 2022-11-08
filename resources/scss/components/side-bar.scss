@@ -1,0 +1,147 @@
+@import '@theme';
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    height: 100%;
+    width: 280px;
+    min-width: 280px;
+    background: $WNB-100;
+    color: $WW-100;
+    padding: 32px 0;
+    transition: all ease-in-out .3s;
+
+    &.close {
+        width: 72px;
+        min-width: 72px;
+    }
+
+    header {
+        padding: 0 20px;
+        height: 50px;
+
+        .image {
+            margin-bottom: 65px; // hardcode
+            display: block;
+        }
+
+        .text {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        .toogle-icon {
+            background: $WB-100;
+
+            @at-root .close#{&} {
+                left: 50%;
+                transform: translateX(-50%) scale(-1, 1);
+            }
+        }
+    }
+
+    .menu-bar {
+        margin-top: 28px;
+
+        .menu {
+            &-items {
+                .menu-item {
+                    cursor: pointer;
+                    padding: 18px 20px;
+                    font-size: 16px;
+                    line-height: 19px;
+                    font-weight: 600;
+                    margin-bottom: 10px;
+                    white-space: nowrap;
+
+                    &.active {
+                        background: $WB-100;
+                    }
+
+                    &:hover:not(.active) {
+                        background: $WNB-120;
+                        transition: background-color ease-in-out .3s;
+                    }
+
+                    img {
+                        width: 32px;
+                        height: 32px;
+                    }
+
+                    .text {
+                        transition: all ease-in-out 1s;
+
+                        @at-root .close#{&} {
+                            transition: all ease-in-out .3s;
+                            opacity: 0;
+                        }
+                    }
+
+                    .router-link {
+                        color: $WB-100;
+                        transition: all ease-in-out 1s;
+
+                        @at-root .close#{&} {
+                            transition: all ease-in-out .3s;
+                            opacity: 0;
+                        }
+                    }
+
+                    .not-done {
+                        color: red;
+                        transition: all ease-in-out 1s;
+
+                        @at-root .close#{&} {
+                            transition: all ease-in-out .3s;
+                            opacity: 0;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    .progress {
+        background: $WTQ-100;
+
+        @at-root .close#{&} {
+            display: none;
+        }
+
+        progress {
+            border: 0;
+            height: 10px;
+            border-radius: 24px;
+            background: rgba(255, 255, 255, 0.5);
+        }
+
+        progress::-webkit-progress-bar {
+            border: 0;
+            height: 10px;
+            border-radius: 24px;
+            background: rgba(255, 255, 255, 0.5);
+        }
+
+        progress::-webkit-progress-value {
+            border: 0;
+            height: 10px;
+            border-radius: 24px;
+            background-color: $WW-100 !important;
+        }
+
+        progress::-moz-progress-bar {
+            border: 0;
+            height: 10px;
+            border-radius: 24px;
+            background: rgba(255, 255, 255, 0.5);
+        }
+    }
+
+    .progress-close {
+        background: $WTQ-100;
+    }
+}
