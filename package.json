@@ -1,18 +1,16 @@
 {
     "private": true,
     "scripts": {
+        "mix": "mix",
         "dev": "npm run development",
         "development": "mix",
         "watch": "mix watch",
         "watch-poll": "mix watch -- --watch-options-poll=1000",
         "hot": "mix watch --hot",
         "prod": "npm run production",
-        "production": "mix --production",
+        "production": "mix --production && npm run build:all:themes",
         "watch:ford": "mix",
-        "dev:ford": "npm run development --theme=ford",
-        "dev:toyota": "npm run development --theme=toyota",
-        "prod:ford": "npm run production --theme=ford",
-        "prod:toyota": "npm run production --theme=toyota"
+        "build:all:themes": "node build.all.themes.js"
     },
     "devDependencies": {
         "autoprefixer": "^10.4.12",

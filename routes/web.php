@@ -13,10 +13,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
-
-Route::get('/', function () {
-    $test = 1;
-
-    return view('pages.welcome', [$test]);
-});
+Route::get('/', [\App\Http\Controllers\HomeController::class, 'index']);
