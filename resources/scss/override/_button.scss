@@ -17,10 +17,10 @@ button {
     }
 
     &.primary {
-        background: var(--primary-button);
+        background: $theme-color-3;
 
         &:hover:enabled {
-            background: var(--primary-button-hover);
+            background: $theme-color-3;
         }
 
         &:disabled {
@@ -33,22 +33,22 @@ button {
     }
 
     &.secondary {
-        color: var(--secondary-button);
-        border: 1px solid var(--secondary-button);
+        color: $theme-color-4;
+        border: 1px solid $theme-color-4;
 
         &:hover:enabled {
             color: #FFFFFF;
-            background: var(--secondary-button);
+            background: $theme-color-4;
         }
 
-        &:disabled {
-            color: var(--secondary-button-disabled);
-            border: 1px solid var(--secondary-button-disabled);
-        }
+        //&:disabled {
+        //    color: var(--secondary-button-disabled);
+        //    border: 1px solid var(--secondary-button-disabled);
+        //}
 
-        i {
-            color: red;
-        }
+        //i {
+        //    color: red;
+        //}
     }
 
     &.link {
@@ -57,14 +57,14 @@ button {
         font-weight: 600;
         font-size: 20px;
         line-height: 24px;
-        color: var(--link-button);
+        color: $theme-color-2;
 
         &:hover:enabled {
-            background: var(--link-button-hover);
+            background:$theme-color-2;
         }
 
         &:disabled {
-            color: var(--link-button-disabled);
+            color: $theme-color-2;
         }
 
         i {

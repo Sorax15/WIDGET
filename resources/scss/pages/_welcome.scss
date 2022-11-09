@@ -1,0 +1,47 @@
+.wrapper-welcome {
+
+    .card {
+        border-radius: 14px;
+        max-width: 704px;
+        padding: 20px 16px;
+    }
+
+    .font-size-32 {
+        font-size: 32px;
+    }
+
+    a {
+        height: 30px;
+        width: fit-content;
+
+        i {
+            display: none;
+        }
+
+        &:hover {
+            border-bottom: 2px solid;
+            width: fit-content;
+
+            i {
+                display: inline-block;
+            }
+        }
+    }
+
+    .img {
+        max-width: 234px;
+        max-height: 180px;
+    }
+
+    .question-icon {
+        width: 340px;
+
+        .subtitle {
+            color: #D0E7FC;
+        }
+
+        i {
+            color: #FFFFFF;
+        }
+    }
+}

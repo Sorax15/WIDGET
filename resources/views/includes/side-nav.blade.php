@@ -6,8 +6,8 @@
                 <span class="name">Express Buying at Homer Skeleton Ford</span>
             </div>
 
-            <div id="toogle-icon" class="toogle-icon absolute cursor-pointer rounded-full w-6 h-6 flex justify-center items-center -right-3 top-3">
-                <i class="fa-solid fa-chevron-left"></i>
+            <div id="toogle-icon" class="toogle-icon absolute theme-color-4-bg cursor-pointer rounded-full w-6 h-6 flex justify-center items-center -right-3 top-3">
+                <i class="theme-color-1-fc fa-solid fa-chevron-left"></i>
             </div>
         </header>
 
@@ -27,7 +27,7 @@
 
                             <div class="flex flex-row">
                                 <span class="router-link uppercase text-xs mr-2">start now</span>
-                                <span class="text-xs not-done">SAVE 20 MIN</span>
+                                <span class="text-xs common-color-4 not-done">SAVE 20 MIN</span>
                             </div>
                         </div>
                     </div>
@@ -40,7 +40,7 @@
 
                             <div class="flex flex-row">
                                 <span class="router-link uppercase text-xs mr-2">start now</span>
-                                <span class="text-xs not-done">SAVE 20 MIN</span>
+                                <span class="text-xs common-color-4 not-done">SAVE 20 MIN</span>
                             </div>
                         </div>
                     </div>
@@ -53,7 +53,7 @@
 
                             <div class="flex flex-row">
                                 <span class="router-link uppercase text-xs mr-2">start now</span>
-                                <span class="text-xs not-done">SAVE 20 MIN</span>
+                                <span class="text-xs common-color-4 not-done">SAVE 20 MIN</span>
                             </div>
                         </div>
                     </div>
@@ -66,7 +66,7 @@
 
                             <div class="flex flex-row">
                                 <span class="router-link uppercase text-xs mr-2">start now</span>
-                                <span class="text-xs not-done">SAVE 20 MIN</span>
+                                <span class="text-xs common-color-4 not-done">SAVE 20 MIN</span>
                             </div>
                         </div>
                     </div>
@@ -79,7 +79,7 @@
 
                             <div class="flex flex-row">
                                 <span class="router-link uppercase text-xs mr-2">start now</span>
-                                <span class="text-xs not-done">SAVE 20 MIN</span>
+                                <span class="text-xs common-color-4 not-done">SAVE 20 MIN</span>
                             </div>
                         </div>
                     </div>
@@ -92,7 +92,7 @@
 
                             <div class="flex flex-row">
                                 <span class="router-link uppercase text-xs mr-2">start now</span>
-                                <span class="text-xs not-done">SAVE 20 MIN</span>
+                                <span class="text-xs common-color-4 not-done">SAVE 20 MIN</span>
                             </div>
                         </div>
                     </div>
@@ -107,21 +107,21 @@
     </div>
 
     <div id="progress" class="progress rounded-r-full mr-3.5 py-2.5 pl-5 pr-9">
-        <div class="flex flex-row items-center">
+        <div class="flex flex-row items-center progress-white">
             <i class="fa-solid mr-1.5 fa-circle-check"></i>
             <span class="text-lg font-bold">Your Progress</span>
         </div>
 
         <progress max="100" value="39" class="w-full"></progress>
 
-        <div class="flex flex-row items-center justify-between">
+        <div class="flex flex-row items-center justify-between progress-dark">
             <span class="text-sm font-semibold">39%</span>
             <span class="text-sm font-semibold">15 min saved</span>
         </div>
     </div>
 
     <div id="progressClose" class="progress-close flex flex-col justify-center rounded-r-full mr-2 py-2.5 pl-5 pr-9">
-        <i class="fa-solid mr-1.5 fa-circle-check"></i>
-        <span class="text-sm font-semibold">39%</span>
+        <i class="fa-solid mr-1.5 fa-circle-check progress-close-white"></i>
+        <span class="text-sm font-semibold progress-close-dark">39%</span>
     </div>
 </nav>

@@ -8,7 +8,7 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $themes = 'toyota';
+        $themes = 'dodge';
 
         return view('pages.welcome', ['theme' => $themes]);
     }

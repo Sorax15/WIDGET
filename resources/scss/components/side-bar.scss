@@ -1,4 +1,5 @@
 @import '@theme';
+@import "../../scss/common/colors";
 
 .sidebar {
     position: fixed;
@@ -8,8 +9,8 @@
     height: 100%;
     width: 280px;
     min-width: 280px;
-    background: $WNB-100;
-    color: $WW-100;
+    background: $common-color-1;
+    color: $theme-color-4;
     padding: 32px 0;
     transition: all ease-in-out .3s;
 
@@ -34,8 +35,6 @@
         }
 
         .toogle-icon {
-            background: $WB-100;
-
             @at-root .close#{&} {
                 left: 50%;
                 transform: translateX(-50%) scale(-1, 1);
@@ -58,11 +57,12 @@
                     white-space: nowrap;
 
                     &.active {
-                        background: $WB-100;
+                        background: $theme-color-2;
+                        color: #FFFFFF;
                     }
 
                     &:hover:not(.active) {
-                        background: $WNB-120;
+                        background: $theme-color-2;
                         transition: background-color ease-in-out .3s;
                     }
 
@@ -81,7 +81,7 @@
                     }
 
                     .router-link {
-                        color: $WB-100;
+                        color: $theme-color-2;
                         transition: all ease-in-out 1s;
 
                         @at-root .close#{&} {
@@ -91,7 +91,6 @@
                     }
 
                     .not-done {
-                        color: red;
                         transition: all ease-in-out 1s;
 
                         @at-root .close#{&} {
@@ -106,7 +105,20 @@
     }
 
     .progress {
-        background: $WTQ-100;
+        background: $theme-color-4;
+        color: #FFFFFF;
+
+        &-white {
+            color: #FFFFFF;
+
+            i {
+                color: #FFFFFF;
+            }
+        }
+
+        &-dark {
+            color: rgba(255, 255, 255, 0.8);
+        }
 
         @at-root .close#{&} {
             display: none;
@@ -130,7 +142,7 @@
             border: 0;
             height: 10px;
             border-radius: 24px;
-            background-color: $WW-100 !important;
+            background-color: #FFFFFF !important;
         }
 
         progress::-moz-progress-bar {
@@ -142,6 +154,18 @@
     }
 
     .progress-close {
-        background: $WTQ-100;
+        background: $theme-color-4;
+
+        &-white {
+            color: #FFFFFF;
+
+            i {
+                color: #FFFFFF;
+            }
+        }
+
+        &-dark {
+            color: rgba(255, 255, 255, 0.8);
+        }
     }
 }
