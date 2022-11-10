@@ -2,10 +2,11 @@ const fs = require('fs');
 const path = require("path");
 const { spawn } = require('node:child_process');
 
-if (true) {
-    var cmd = 'npm.cmd'
-} else {
-    var cmd = 'npm'
+
+let cmd = 'npm.cmd';
+
+if (process.platform === 'linux' || process.platform === 'darwin') {
+    cmd = 'npm'
 }
 
 const files = fs.readdirSync(path.join(__dirname, `resources/scss/themes`));
