@@ -4,7 +4,10 @@ const path = require('path');
 
 const theme = process.env.npm_config_theme || 'ford';
 
-const config = mix.js('resources/js/app.js', 'public/js')
+const config = mix.clean({
+        cleanOnceBeforeBuildPatterns: ['./css/*','./js/*','./fonts/*', ]
+    })
+    .js('resources/js/app.js', 'public/js')
     .postCss('resources/css/app.css', 'public/css', [require('postcss-import'), require('tailwindcss')])
     .copyDirectory('resources/fonts', 'public/fonts')
     .options({processCssUrls: false});

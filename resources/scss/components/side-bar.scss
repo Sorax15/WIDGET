@@ -12,7 +12,7 @@
     background: $common-color-1;
     color: $theme-color-4;
     padding: 32px 0;
-    transition: all ease-in-out .3s;
+    transition: all ease-in-out .2s;
 
     &.close {
         width: 72px;
@@ -62,8 +62,13 @@
                     }
 
                     &:hover:not(.active) {
+                        color: #FFFFFF;
                         background: $theme-color-2;
-                        transition: background-color ease-in-out .3s;
+                        transition: background-color ease-in-out .2s;
+
+                        .router-link {
+                            color: #FFFFFF;
+                        }
                     }
 
                     img {
@@ -72,29 +77,29 @@
                     }
 
                     .text {
-                        transition: all ease-in-out 1s;
+                        transition: all ease-in-out .2s;
 
                         @at-root .close#{&} {
-                            transition: all ease-in-out .3s;
+                            transition: all ease-in-out .2s;
                             opacity: 0;
                         }
                     }
 
                     .router-link {
                         color: $theme-color-2;
-                        transition: all ease-in-out 1s;
+                        transition: all ease-in-out .2s;
 
                         @at-root .close#{&} {
-                            transition: all ease-in-out .3s;
+                            transition: all ease-in-out .2s;
                             opacity: 0;
                         }
                     }
 
                     .not-done {
-                        transition: all ease-in-out 1s;
+                        transition: all ease-in-out .2s;
 
                         @at-root .close#{&} {
-                            transition: all ease-in-out .3s;
+                            transition: all ease-in-out .2s;
                             opacity: 0;
                         }
                     }

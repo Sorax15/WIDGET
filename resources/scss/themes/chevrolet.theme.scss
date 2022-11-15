@@ -2,3 +2,14 @@ $theme-color-1: #FAF5EB;
 $theme-color-2: #CD9834;
 $theme-color-3: #CD9834;
 $theme-color-4: #262626;
+
+$button-background: inherit;
+$button-color: $theme-color-4;
+$button-border: 1px solid $theme-color-2;
+
+$button-background-hover: $theme-color-2;
+$button-border-hover: 1px solid $theme-color-2;
+$button-color-hover: $theme-color-4;
+
+$button-border-radius: 0;
+$card-border-radius: 0;

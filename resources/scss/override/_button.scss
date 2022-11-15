@@ -2,13 +2,13 @@
 
 button {
     border: none;
-    border-radius: 8px;
     padding: 11.5px 42px;
     font-weight: 700;
     color: #FFFFFF;
     background: #FFFFFF;
     font-size: 16px;
     line-height: 19px;
+    border-radius: $button-border-radius;
 
     i {
         width: 15px;
@@ -17,14 +17,18 @@ button {
     }
 
     &.primary {
-        background: $theme-color-3;
+        color: $button-color;
+        background: $button-background;
+        border: $button-border;
 
         &:hover:enabled {
-            background: $theme-color-3;
+            background: $button-background-hover;
+            color: $button-color-hover;
+            border: $button-border-hover;
         }
 
         &:disabled {
-            background: var(--primary-button-disabled);
+            background: $theme-color-4;
         }
 
         i {

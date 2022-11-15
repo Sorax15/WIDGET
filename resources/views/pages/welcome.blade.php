@@ -27,7 +27,7 @@
             {{--                Watch the video to learn how!--}}
             {{--            </button>--}}
 
-            <div class="mb-10 card theme-color-1-bg theme-color-4-fc">
+            <div class="mb-10 card common-color-1-bg theme-color-4-fc">
                 <div class="flex flex-row">
                     <img src="{{ asset('img/vehicle.png') }}" alt="vehicle">
                     <div class="ml-3">

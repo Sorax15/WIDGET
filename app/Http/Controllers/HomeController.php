@@ -6,10 +6,10 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
+    public $theme = 'toyota';
+
     public function index()
     {
-        $themes = 'dodge';
-
-        return view('pages.welcome', ['theme' => $themes]);
+        return view('pages.welcome', ['theme' => $this->theme]);
     }
 }

@@ -1,16 +1,18 @@
-.app {
-    .badge {
-        border-radius: 52px;
-        color: white;
+@import "@theme";
 
-        &.small {
-            padding: 3px 14px;
-            font-size: 8px;
-            line-height: 10px;
+.badge {
+    border-radius: 52px;
+    color: white;
+    background: $theme-color-2;
 
-            &.primary {
-                background: var(--side-bar-turquoise);
-            }
+    &.small {
+        padding: 3px 14px;
+        font-size: 8px;
+        line-height: 10px;
+
+        &.primary {
+
         }
     }
 }
+
