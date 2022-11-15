@@ -12,7 +12,7 @@
     background: $common-color-1;
     color: $theme-color-4;
     padding: 32px 0;
-    transition: all ease-in-out .3s;
+    transition: all ease-in-out .2s;
 
     &.close {
         width: 72px;
@@ -24,8 +24,14 @@
         height: 50px;
 
         .image {
-            margin-bottom: 65px; // hardcode
+            margin-bottom: 35px;
             display: block;
+
+            img {
+                width: 100%;
+                height: 30px;
+                max-width: 240px;
+            }
         }
 
         .text {
@@ -43,7 +49,7 @@
     }
 
     .menu-bar {
-        margin-top: 28px;
+        margin-top: 100px;
 
         .menu {
             &-items {
@@ -59,42 +65,56 @@
                     &.active {
                         background: $theme-color-2;
                         color: #FFFFFF;
+
+                        img {
+                            filter: $icon-filter-hover;
+                        }
                     }
 
                     &:hover:not(.active) {
+                        color: #FFFFFF;
                         background: $theme-color-2;
-                        transition: background-color ease-in-out .3s;
+                        transition: background-color ease-in-out .2s;
+
+                        .router-link {
+                            color: #FFFFFF;
+                        }
+
+                        .img {
+                            filter: $icon-filter-hover;
+                        }
                     }
 
                     img {
                         width: 32px;
                         height: 32px;
+                        filter: $icon-filter;
                     }
 
                     .text {
-                        transition: all ease-in-out 1s;
+                        transition: all ease-in-out .2s;
 
                         @at-root .close#{&} {
-                            transition: all ease-in-out .3s;
+                            transition: all ease-in-out .2s;
                             opacity: 0;
                         }
                     }
 
                     .router-link {
                         color: $theme-color-2;
-                        transition: all ease-in-out 1s;
+                        transition: all ease-in-out .2s;
 
                         @at-root .close#{&} {
-                            transition: all ease-in-out .3s;
+                            transition: all ease-in-out .2s;
                             opacity: 0;
                         }
                     }
 
                     .not-done {
-                        transition: all ease-in-out 1s;
+                        transition: all ease-in-out .2s;
 
                         @at-root .close#{&} {
-                            transition: all ease-in-out .3s;
+                            transition: all ease-in-out .2s;
                             opacity: 0;
                         }
                     }

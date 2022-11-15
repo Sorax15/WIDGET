@@ -2,3 +2,129 @@ $theme-color-1: #E6EDF3;
 $theme-color-2: #004882;
 $theme-color-3: #337AB7;
 $theme-color-4: #2D2D2D;
+
+// BUTTONS
+$button-background: $theme-color-3;
+$button-color: #FFFFFF;
+$button-border: none;
+$button-background-hover: $theme-color-3;
+$button-border-hover: none;
+$button-color-hover: #FFFFFF;
+$button-border-radius: 0;
+$card-border-radius: 0;
+
+// INPUTS
+$input-border-radius: 0;
+
+// ICONS
+$icon-filter: invert(69%) sepia(39%) saturate(738%) hue-rotate(7deg) brightness(102%) contrast(94%);
+$icon-filter-hover: invert(69%) sepia(39%) saturate(738%) hue-rotate(7deg) brightness(102%) contrast(94%);
+
+// FONTS
+$font-family: 'Avenir Next Cyr', sans-serif;
+$font-path: '/../fonts/avenir';
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url("#{$font-path}/gAvenirNextCyr-Thin.woff2") format("woff2"),
+    url("#{$font-path}/AvenirNextCyr-Thin.woff") format("woff");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url("#{$font-path}/AvenirNextCyr-ThinItalic.woff2") format("woff2"),
+    url("#{$font-path}/AvenirNextCyr-ThinItalic.woff") format("woff");
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url("#{$font-path}/AvenirNextCyr-UltraLight.woff2") format("woff2"),
+    url("#{$font-path}/AvenirNextCyr-UltraLight.woff") format("woff");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url("#{$font-path}/AvenirNextCyr-UltraLightIt.woff2") format("woff2"),
+    url("#{$font-path}/AvenirNextCyr-UltraLightIt.woff") format("woff");
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url("#{$font-path}/AvenirNextCyr-Light.woff2") format("woff2"),
+    url("#{$font-path}/AvenirNextCyr-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url("#{$font-path}/AvenirNextCyr-LightItalic.woff2") format("woff2"),
+    url("#{$font-path}/AvenirNextCyr-LightItalic.woff") format("woff");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url("#{$font-path}/AvenirNextCyr-Regular.woff2") format("woff2"),
+    url("#{$font-path}/AvenirNextCyr-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url("#{$font-path}/AvenirNextCyr-Medium.woff2") format("woff2"),
+    url("#{$font-path}/AvenirNextCyr-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url("#{$font-path}/AvenirNextCyr-MediumItalic.woff2") format("woff2"),
+    url("#{$font-path}/AvenirNextCyr-MediumItalic.woff") format("woff");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url("#{$font-path}/AvenirNextCyr-Demi.woff2") format("woff2"),
+    url("#{$font-path}/AvenirNextCyr-Demi.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url("#{$font-path}/AvenirNextCyr-DemiItalic.woff2") format("woff2"),
+    url("#{$font-path}/AvenirNextCyr-DemiItalic.woff") format("woff");
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url("#{$font-path}/AvenirNextCyr-Bold.woff2") format("woff2"),
+    url("#{$font-path}/AvenirNextCyr-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url("#{$font-path}/AvenirNextCyr-BoldItalic.woff2") format("woff2"),
+    url("#{$font-path}/AvenirNextCyr-BoldItalic.woff") format("woff");
+    font-weight: 700;
+    font-style: italic;
+}

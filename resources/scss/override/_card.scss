@@ -1,6 +1,6 @@
-.app {
-    .card {
-        background: #EBEEF5;
-        padding: 24px 16px;
-    }
+@import "@theme";
+
+.card {
+    border-radius: $card-border-radius;
+    padding: 20px 16px;
 }

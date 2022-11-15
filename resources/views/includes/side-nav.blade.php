@@ -1,7 +1,9 @@
 <nav id="sidebar" class="sidebar flex flex-col justify-between">
     <div class="sidebar-content">
         <header class="relative">
-            <span class="image"></span>
+            <span class="image" id="logo">
+                <img src="https://via.placeholder.com/240x29" alt="test">
+            </span>
             <div class="text logo-text">
                 <span class="name">Express Buying at Homer Skeleton Ford</span>
             </div>

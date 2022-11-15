@@ -63,5 +63,10 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
-## LOCAL DEVELOP
-// npm run dev -- --theme="theme"
+## Run develop example --theme=ford 
+
+command: npm run dev -- --theme="theme"
+
+## Run production 
+
+npm run production
