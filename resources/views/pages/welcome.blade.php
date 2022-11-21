@@ -85,12 +85,12 @@
             </div>
         </div>
 
-        <div class="question-icon fixed cursor-pointer theme-color-2-bg common-color-1-fc bottom-9 right-9 rounded-xl pt-2.5 px-3 pb-3">
+        <div class="question-icon fixed cursor-pointer theme-color-2-bg common-color-1-fc bottom-9 right-9 rounded-xl pt-2.5 px-3 pb-3" onclick="onOpenQuestionDialog()">
             <div class="flex flex-row items-center">
                 <i class="fa-solid fa-circle-question fa-2xl"></i>
                 <div class="flex flex-col ml-2.5">
                     <div class="font-semibold text-xl">Have some questions?</div>
-                    <div class="font-semibold text-xs subtitle" onclick="onOpenQuestionDialog()">Click here to contact us!</div>
+                    <div class="font-semibold text-xs subtitle">Click here to contact us!</div>
                 </div>
             </div>
         </div>
@@ -105,8 +105,11 @@
 
         function onOpenQuestionDialog() {
             questionModal = Swal.fire({
+                customClass: 'fixed right-9 bottom-32',
                 template: '#question-dialog',
-                backdrop: 'rgb(0 0 0 / 88%)',
+                width: '340px',
+                backdrop: 'rgb(0 0 0 / 1%)',
+                position: 'bottom-end',
                 allowOutsideClick: false,
                 showConfirmButton: false,
                 allowEscapeKey: false

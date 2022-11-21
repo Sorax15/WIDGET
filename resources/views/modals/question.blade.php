@@ -2,7 +2,7 @@
     <swal-html>
 
         <div class="flex justify-between items-center">
-            <h3>Heed some help?</h3>
+            <h3>Need some help?</h3>
             <div class="cursor-pointer" onclick="onCloseQuestionDialog()">
                 <i class="fa-solid fa-xmark"></i>
             </div>
