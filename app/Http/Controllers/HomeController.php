@@ -15,10 +15,11 @@ class HomeController extends Controller
 
     public function question(Request $request)
     {
-        $this->validate($request, [
+        $validated = $request->validate([
             'name' => 'required|max:255',
-            'phone' => 'required|min:10',
+            'phone' => 'required|numeric|min:10',
             'question' => 'required|min:10'
         ]);
+
     }
 }
