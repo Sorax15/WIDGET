@@ -8,17 +8,19 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     font-size: 54px;
     line-height: 64px;
+    color: $theme-color-4;
 }
 
 h2 {
     font-size: 40px;
     line-height: 48px;
+    color: $theme-color-2;
 }
 
 h3 {
     font-size: 28px;
     line-height: 33px;
-    color: $theme-color-4;
+    color: $theme-color-2;
 }
 
 h4 {
