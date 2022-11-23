@@ -26,14 +26,17 @@
     }
 }
 
+
+
 input, textarea {
 
     &:not([type=checkbox]) {
         border-radius: $input-border-radius;
         border: 1px solid $common-color-3;
-        color: $common-color-4;
+        color: #231F20;
         padding: 8px 10px;
         outline: none;
+        height: 42px;
 
         &:has(~ :is(.errors)) {
             border: 1px solid #FF3C47;
@@ -91,7 +94,7 @@ input, textarea {
     &[type=checkbox] {
          + label {
              margin-left: 11px;
-             font-weight: 400;
+             font-weight: 500;
              font-size: 16px;
              line-height: 22px;
              color: #2D3436;

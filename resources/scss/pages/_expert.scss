@@ -1,0 +1,131 @@
+.expert-wrapper {
+
+    .list-experts {
+        max-width: 280px;
+        min-width: 280px;
+        width: 100%;
+
+        img {
+            width: 60px;
+            height: 60px;
+        }
+
+        .item-expert {
+            padding: 11px 13px;
+
+            &:not(&:first-child) {
+                margin-top: 5px;
+            }
+
+            .name {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 17px;
+                color: #1385F0;
+            }
+
+            .role {
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 14px;
+                color: #5C6077;
+                opacity: 0.7;
+            }
+        }
+    }
+
+    .email, .phone {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 169.5%;
+    }
+
+    .achievement {
+        &-img {
+            -webkit-mask: url("/img/icons/check-certified.svg") no-repeat center;
+            mask: url("/img/icons/check-certified.svg") no-repeat center;
+            background-color: #1385F0;
+            width: 18px;
+            height: 18px;
+        }
+    }
+
+    .separator {
+        background: #D9DCEA;
+    }
+
+    .bio {
+        width: 293px;
+
+        img {
+            width: 293px;
+        }
+    }
+
+    .review {
+        width: 771px;
+
+        &-details {
+            img {
+                width: 109px;
+                height: 45px;
+            }
+        }
+
+        &-date, &-creator {
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 15px;
+            color: rgba(33, 33, 33, 0.5);
+        }
+
+        &-creator {
+            margin-top: 6px;
+        }
+
+        &-navigation {
+            margin-top: 55px;
+        }
+    }
+
+    .card-expert {
+        background: #EBEEF5;
+        border-radius: 14px;
+        padding: 16px;
+
+        .info {
+            font-size: 14px;
+            line-height: 22px;
+            font-weight: 500;
+            color: #2D364C;
+        }
+
+        &.gallery {
+            padding: 40px 28px;
+
+            .image {
+                position: relative;
+
+                &:not(:first-child) {
+                    margin-left: 21px;
+                }
+
+                &:last-child:after {
+                    position: absolute;
+                    background: rgba(0, 38, 122, 0.7);
+                    content: "+ 23 photos";
+                    color: #FFFFFF;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 169.5%;
+                    width: 164px;
+                    height: 110px;
+                    top: 9px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}

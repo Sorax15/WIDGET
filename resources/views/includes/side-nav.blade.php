@@ -16,12 +16,12 @@
         <div class="menu-bar">
             <div class="menu">
                 <div class="menu-items">
-                    <div class="menu-item flex flex-row items-center active">
+                    <a href="{{ url('/welcome') }}" class="menu-item flex flex-row items-center {{ request()->is('welcome*') ? 'active' : '' }}">
                         <img src="{{ asset('img/icons/home.svg') }}" alt="home">
-                        <a href="/test" class="text nav-text ml-2.5">Welcome</a>
-                    </div>
+                        <div class="text nav-text ml-2.5">Welcome</div>
+                    </a>
 
-                    <div class="menu-item flex flex-row items-center">
+                    <a href="{{ url('/choose-expert') }}" class="menu-item flex flex-row items-center {{ request()->is('choose-expert*') ||  request()->is('expert-details*')  ? 'active' : '' }}">
                         <img src="{{ asset('img/icons/user.svg') }}" alt="user">
 
                         <div class="flex flex-col ml-2.5">
@@ -32,7 +32,7 @@
                                 <span class="text-xs common-color-4 not-done">SAVE 20 MIN</span>
                             </div>
                         </div>
-                    </div>
+                    </a>
 
                     <div class="menu-item flex flex-row items-center">
                         <img src="{{ asset('img/icons/vehicle.svg') }}" alt="vehicle">
@@ -103,7 +103,7 @@
                         <img src="{{ asset('img/icons/summary.svg') }}" alt="summary">
                         <span class="text nav-text ml-2.5">Summary</span>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </div>

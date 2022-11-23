@@ -8,7 +8,7 @@
 
 @section('content')
     <div class="wrapper-welcome w-full relative">
-        <div class="fixed cursor-pointer top-9 right-9">
+        <div class="absolute cursor-pointer top-2 right-9">
             <button class="secondary">Exit</button>
         </div>
 
@@ -22,11 +22,6 @@
                 by completing steps needed to expedite and ease the process when they arrive.
             </div>
 
-            {{--            <button class="secondary mb-8">--}}
-            {{--                <i class="fa-solid fa-circle-play"></i>--}}
-            {{--                Watch the video to learn how!--}}
-            {{--            </button>--}}
-
             <div class="mb-10 card common-color-1-bg theme-color-4-fc">
                 <div class="flex flex-row">
                     <img src="{{ asset('img/vehicle.png') }}" alt="vehicle">
@@ -34,7 +29,7 @@
                         <div class="flex flex-row items-center">
                             <div class="badge small uppercase primary font-bold mr-4">New</div>
                             <div class="text-xs mr-4 common-color-4-fc">
-                                Stock# <span class="theme-color-4-fc common-color-4-fc font-medium">99618</span>
+                                Stock# <span class="theme-color-4-fc font-medium">99618</span>
                             </div>
                             <div class="text-xs common-color-4-fc">
                                 VIN <span class="theme-color-4-fc font-medium">1G1ZD5ST7JF159542</span>
@@ -107,7 +102,7 @@
             questionModal = Swal.fire({
                 customClass: 'fixed right-9 bottom-32',
                 template: '#question-dialog',
-                width: '340px',
+                width: '342px',
                 backdrop: 'rgb(0 0 0 / 1%)',
                 position: 'bottom-end',
                 allowOutsideClick: false,

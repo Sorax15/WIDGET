@@ -2,16 +2,16 @@
     <swal-html>
 
         <div class="flex justify-between items-center">
-            <h3>Need some help?</h3>
+            <h4>Need some help?</h4>
             <div class="cursor-pointer" onclick="onCloseQuestionDialog()">
-                <i class="fa-solid fa-xmark"></i>
+                <i class="fa-solid fa-xmark fa-xl"></i>
             </div>
         </div>
 
-        <p class="mt-7 mb-4">
+        <div class="question-dialog-text mt-6 mb-4">
             We can help you with anything you need.
             Just type your question here and we’ll reply as fast as possible
-        </p>
+        </div>
 
         <input type="hidden" id="token" value="{{ csrf_token() }}">
 
@@ -25,7 +25,7 @@
             <input id="phone" type="number">
         </div>
 
-        <div class="input mb-7">
+        <div class="input mb-7 question-dialog">
             <label for="question">Your question</label>
             <textarea id="question"></textarea>
         </div>
@@ -34,7 +34,8 @@
             <input id="checkbox" type="checkbox" onclick="onChangeCheckbox(this)">
             <label for="checkbox">
                 I agree to receiving Text Messages from Homer Skelton Ford.
-                You will receive a text message response from phone number 901-256-4132.
+                You will receive a text message response from phone number
+                <span class="font-bold">901-256-4132.</span>
             </label>
         </div>
 
