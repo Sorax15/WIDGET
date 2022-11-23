@@ -1,15 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,700;1,600&family=Roboto:wght@300;400;500;700;900&display=swap');
+
 $theme-color-1: #FAF5EB;
 $theme-color-2: #CD9834;
 $theme-color-3: #CD9834;
 $theme-color-4: #262626;
 
+// BUTTONS
 $button-background: inherit;
 $button-color: $theme-color-4;
 $button-border: 1px solid $theme-color-2;
-
 $button-background-hover: $theme-color-2;
 $button-border-hover: 1px solid $theme-color-2;
 $button-color-hover: $theme-color-4;
-
 $button-border-radius: 0;
 $card-border-radius: 0;
+
+// INPUTS
+$input-border-radius: 0;
+
+// ICONS
+$icon-filter: invert(69%) sepia(39%) saturate(738%) hue-rotate(7deg) brightness(102%) contrast(94%);
+$icon-filter-hover: invert(69%) sepia(39%) saturate(738%) hue-rotate(7deg) brightness(102%) contrast(94%);
+
+// FONTS
+$font-family: 'Roboto', sans-serif;

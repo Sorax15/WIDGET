@@ -3,6 +3,7 @@ $theme-color-2: #002C5F;
 $theme-color-3: #007FA8;
 $theme-color-4: #000000;
 
+// BUTTONS
 $button-background: $theme-color-3;
 $button-color: #FFFFFF;
 $button-border: none;
@@ -11,3 +12,54 @@ $button-border-hover: none;
 $button-color-hover: #FFFFFF;
 $button-border-radius: 0;
 $card-border-radius: 0;
+
+// INPUTS
+$input-border-radius: 0;
+
+// ICONS
+$icon-filter: invert(69%) sepia(39%) saturate(738%) hue-rotate(7deg) brightness(102%) contrast(94%);
+$icon-filter-hover: invert(69%) sepia(39%) saturate(738%) hue-rotate(7deg) brightness(102%) contrast(94%);
+
+//FONTS
+$font-family: 'Hyundai Sans Head Office', sans-serif;
+$font-path: '/../fonts/hyundai';
+
+@font-face {
+    font-family: "Hyundai Sans Head Office";
+    src: url("#{$font-path}/HyundaiSansHeadOffice-Light.woff2") format("woff2"),
+    url("#{$font-path}/HyundaiSansHeadOffice-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Hyundai Sans Head Office";
+    src: url("#{$font-path}/HyundaiSansTextOffice-Regular.woff2") format("woff2"),
+    url("#{$font-path}/HyundaiSansTextOffice-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Hyundai Sans Head Office";
+    src: url("#{$font-path}/HyundaiSansTextOffice-Medium.woff2") format("woff2"),
+    url("#{$font-path}/HyundaiSansTextOffice-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Hyundai Sans Head Office";
+    src: url("#{$font-path}/HyundaiSansTextOffice-Bold.woff2") format("woff2"),
+    url("#{$font-path}/HyundaiSansTextOffice-Bold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Hyundai Sans Head Office";
+    src: url("#{$font-path}/HyundaiSansTextOffice-BoldItalic.woff2") format("woff2"),
+    url("#{$font-path}/HyundaiSansTextOffice-BoldItalic.woff") format("woff");
+    font-weight: 600;
+    font-style: italic;
+}

@@ -1,0 +1,19 @@
+.swal2-container.swal2-backdrop-show {
+    background: rgba(0, 0, 0, 0.88);
+
+    .swal2-popup {
+        padding: 0;
+        margin: 0;
+        font-size: inherit;
+        color: inherit;
+        border: 1px solid #D9DCEA;
+        border-radius: 14px;
+
+        .swal2-html-container {
+            margin: 0;
+            padding: 24px 28px;
+            text-align: initial;
+            font-size: inherit;
+        }
+    }
+}

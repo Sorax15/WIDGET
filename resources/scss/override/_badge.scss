@@ -1,17 +1,52 @@
 @import "@theme";
 
 .badge {
-    border-radius: 52px;
     color: white;
     background: $theme-color-2;
 
     &.small {
+        border-radius: 52px;
         padding: 3px 14px;
         font-size: 8px;
         line-height: 10px;
+    }
 
-        &.primary {
+    &.simple {
+        font-size: 14px;
+        font-weight: 700;
+        color: #FAFAFA;
+        background: $theme-color-3;
+        border-radius: 5px;
+        padding: 3px 11px;
+        height: fit-content;
+    }
 
+    &.rounded-one {
+        display: flex;
+        align-items: center;
+        font-weight: 800;
+        font-size: 12px;
+        line-height: 15px;
+        height: fit-content;
+        padding: 4px 19px 4px 7px;
+        border-top-left-radius: 24px;
+        border-bottom-left-radius: 24px;
+        clip-path: polygon(100% 0, 90% 47%, 100% 100%, 0 100%, 0 0);
+
+        img {
+            margin-right: 5px;
+        }
+
+        &:after {
+            content: '';
+        }
+
+        &.blue {
+            background: #0067C7;
+        }
+
+        &.green {
+            background: #8AC048;
         }
     }
 }

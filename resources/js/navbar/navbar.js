@@ -1,4 +1,5 @@
 const navbar        = document.getElementById("sidebar");
+const logo          = document.getElementById("logo");
 const toogleButton  = document.getElementById("toogle-icon");
 const name          = document.getElementById('sidebar').querySelectorAll("header .name");
 const progress      = document.getElementById("progress");
@@ -15,10 +16,12 @@ function toogleSidebar() {
         if (navbar.classList.contains('close')) {
             setTimeout(() => {
                 name[0].style.display = 'block';
+                logo.style.display = 'block';
             }, 250)
             showFullProgress()
         } else  {
             name[0].style.display = 'none';
+            logo.style.display = 'none';
             showSmallProgress()
         }
     }
