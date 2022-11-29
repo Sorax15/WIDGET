@@ -8,7 +8,7 @@
                 <span class="name">Express Buying at Homer Skeleton Ford</span>
             </div>
 
-            <div id="toogle-icon" class="toogle-icon absolute theme-color-4-bg cursor-pointer rounded-full w-6 h-6 flex justify-center items-center -right-3 top-3">
+            <div id="toogle-icon" class="toogle-icon absolute theme-color-2-bg cursor-pointer rounded-full w-6 h-6 flex justify-center items-center">
                 <i class="theme-color-1-fc fa-solid fa-chevron-left"></i>
             </div>
         </header>
@@ -17,93 +17,90 @@
             <div class="menu">
                 <div class="menu-items">
                     <a href="{{ url('/welcome') }}" class="menu-item flex flex-row items-center {{ request()->is('welcome*') ? 'active' : '' }}">
-                        <img src="{{ asset('img/icons/home.svg') }}" alt="home">
-                        <div class="text nav-text ml-2.5">Welcome</div>
+                        <div class="img img-home"></div>
+                        <div class="text nav-text ml-2.5">Home</div>
                     </a>
 
                     <a href="{{ url('/choose-expert') }}" class="menu-item flex flex-row items-center {{ request()->is('choose-expert*') ||  request()->is('expert-details*')  ? 'active' : '' }}">
-                        <img src="{{ asset('img/icons/user.svg') }}" alt="user">
+                        <div class="img img-user"></div>
 
                         <div class="flex flex-col ml-2.5">
                             <span class="text nav-text">Choose your salesperson</span>
 
                             <div class="flex flex-row">
                                 <span class="router-link uppercase text-xs mr-2">start now</span>
-                                <span class="text-xs common-color-4 not-done">SAVE 20 MIN</span>
+                                <span class="text-xs common-color-4-fc not-done">SAVE 20 MIN</span>
                             </div>
                         </div>
                     </a>
 
                     <div class="menu-item flex flex-row items-center">
-                        <img src="{{ asset('img/icons/vehicle.svg') }}" alt="vehicle">
+                        <div class="img img-vehicle"></div>
 
                         <div class="flex flex-col ml-2.5">
                             <span class="text nav-text">Select your vehicle</span>
 
                             <div class="flex flex-row">
-                                <span class="router-link uppercase text-xs mr-2">start now</span>
-                                <span class="text-xs common-color-4 not-done">SAVE 20 MIN</span>
+                                <span class="text-xs common-color-4-fc not-done">SAVE 30 MIN</span>
                             </div>
                         </div>
                     </div>
 
                     <div class="menu-item flex flex-row items-center">
-                        <img src="{{ asset('img/icons/trade.svg') }}" alt="trade">
+                        <div class="img img-trade"></div>
 
                         <div class="flex flex-col ml-2.5">
                             <span class="text nav-text">Value your trade</span>
 
                             <div class="flex flex-row">
                                 <span class="router-link uppercase text-xs mr-2">start now</span>
-                                <span class="text-xs common-color-4 not-done">SAVE 20 MIN</span>
                             </div>
                         </div>
                     </div>
 
+{{--                    <div class="menu-item flex flex-row items-center">--}}
+{{--                        <div class="img img-calculate"></div>--}}
+
+{{--                        <div class="flex flex-col ml-2.5">--}}
+{{--                            <span class="text nav-text">Calculate payments</span>--}}
+
+{{--                            <div class="flex flex-row">--}}
+{{--                                <span class="router-link uppercase text-xs mr-2">start now</span>--}}
+{{--                                <span class="text-xs common-color-4-fc not-done">SAVE 20 MIN</span>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+
                     <div class="menu-item flex flex-row items-center">
-                        <img src="{{ asset('img/icons/calculator.svg') }}" alt="calculator">
-
-                        <div class="flex flex-col ml-2.5">
-                            <span class="text nav-text">Calculate payments</span>
-
-                            <div class="flex flex-row">
-                                <span class="router-link uppercase text-xs mr-2">start now</span>
-                                <span class="text-xs common-color-4 not-done">SAVE 20 MIN</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="menu-item flex flex-row items-center">
-                        <img src="{{ asset('img/icons/schedule.svg') }}" alt="schedule">
+                        <div class="img img-schedule"></div>
 
                         <div class="flex flex-col ml-2.5">
                             <span class="text nav-text">Schedule appointment</span>
 
                             <div class="flex flex-row">
                                 <span class="router-link uppercase text-xs mr-2">start now</span>
-                                <span class="text-xs common-color-4 not-done">SAVE 20 MIN</span>
+                                <span class="text-xs common-color-4-fc not-done">SAVE 20 MIN</span>
                             </div>
                         </div>
                     </div>
 
                     <div class="menu-item flex flex-row items-center">
-                        <img src="{{ asset('img/icons/coins.svg') }}" alt="coins">
+                        <div class="img img-coins"></div>
 
                         <div class="flex flex-col ml-2.5">
                             <span class="text nav-text">Get pre-approved</span>
 
                             <div class="flex flex-row">
                                 <span class="router-link uppercase text-xs mr-2">start now</span>
-                                <span class="text-xs common-color-4 not-done">SAVE 20 MIN</span>
+                                <span class="text-xs common-color-4-fc not-done">SAVE 30 MIN</span>
                             </div>
                         </div>
                     </div>
 
                     <div class="menu-item flex flex-row items-center">
-                        <img src="{{ asset('img/icons/summary.svg') }}" alt="summary">
+                        <div class="img img-summary"></div>
                         <span class="text nav-text ml-2.5">Summary</span>
                     </div>
-                </a>
             </div>
         </div>
     </div>

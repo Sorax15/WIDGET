@@ -21,7 +21,6 @@
 
     header {
         padding: 0 20px;
-        height: 50px;
 
         .image {
             margin-bottom: 35px; // hardcode
@@ -41,6 +40,9 @@
         }
 
         .toogle-icon {
+            top: 76px;
+            right: -12px;
+
             @at-root .close#{&} {
                 left: 50%;
                 transform: translateX(-50%) scale(-1, 1);
@@ -49,46 +51,87 @@
     }
 
     .menu-bar {
-        margin-top: 100px;
+        margin-top: 27px;
 
         .menu {
             &-items {
                 .menu-item {
                     cursor: pointer;
-                    padding: 18px 20px;
+                    padding: 20px;
                     font-size: 16px;
                     line-height: 19px;
                     font-weight: 600;
-                    margin-bottom: 10px;
                     white-space: nowrap;
+                    color: $theme-color-4;
+
+                    .img {
+                        width: 32px;
+                        height: 32px;
+                        min-width: 32px;
+                        background-color: $common-color-3;
+
+                        &-home {
+                            -webkit-mask: url("/img/icons/home.svg") no-repeat center;
+                            mask: url("/img/icons/home.svg") no-repeat center;
+                        }
+
+                        &-user {
+                            -webkit-mask: url("/img/icons/user.svg") no-repeat center;
+                            mask: url("/img/icons/user.svg") no-repeat center;
+                        }
+
+                        &-vehicle {
+                            -webkit-mask: url("/img/icons/vehicle.svg") no-repeat center;
+                            mask: url("/img/icons/vehicle.svg") no-repeat center;
+                        }
+
+                        &-trade {
+                            -webkit-mask: url("/img/icons/trade.svg") no-repeat center;
+                            mask: url("/img/icons/trade.svg") no-repeat center;
+                        }
+
+                        &-calculate {
+                            -webkit-mask: url("/img/icons/calculator.svg") no-repeat center;
+                            mask: url("/img/icons/calculator.svg") no-repeat center;
+                        }
+
+                        &-schedule {
+                            -webkit-mask: url("/img/icons/schedule.svg") no-repeat center;
+                            mask: url("/img/icons/schedule.svg") no-repeat center;
+                        }
+
+                        &-coins {
+                            -webkit-mask: url("/img/icons/coins.svg") no-repeat center;
+                            mask: url("/img/icons/coins.svg") no-repeat center;
+                        }
+
+                        &-summary {
+                            -webkit-mask: url("/img/icons/summary.svg") no-repeat center;
+                            mask: url("/img/icons/summary.svg") no-repeat center;
+                        }
+                    }
 
                     &.active {
                         background: $theme-color-2;
                         color: #FFFFFF;
 
-                        img {
-                            filter: $icon-filter-hover;
+                        .img {
+                            background-color: #FFFFFF;
                         }
                     }
 
                     &:hover:not(.active) {
-                        color: #FFFFFF;
-                        background: $theme-color-2;
+                        color: $theme-color-4;
+                        background: $common-color-2;
                         transition: background-color ease-in-out .2s;
 
                         .router-link {
-                            color: #FFFFFF;
+                            color: $theme-color-3;
                         }
 
                         .img {
-                            filter: $icon-filter-hover;
+                            background-color: $common-color-3;
                         }
-                    }
-
-                    img {
-                        width: 32px;
-                        height: 32px;
-                        filter: $icon-filter;
                     }
 
                     .text {
@@ -125,6 +168,11 @@
     }
 
     .progress {
+        position: absolute;
+        bottom: 31px;
+        left: 0;
+        width: calc(100% - 14px);
+        margin-right: 14px;
         background: $theme-color-4;
         color: #FFFFFF;
 
@@ -147,15 +195,15 @@
         progress {
             border: 0;
             height: 10px;
-            border-radius: 24px;
-            background: rgba(255, 255, 255, 0.5);
+            border-radius: 36px;
+            background: $common-color-4;
         }
 
         progress::-webkit-progress-bar {
             border: 0;
             height: 10px;
             border-radius: 24px;
-            background: rgba(255, 255, 255, 0.5);
+            background: $common-color-4
         }
 
         progress::-webkit-progress-value {
@@ -175,6 +223,11 @@
 
     .progress-close {
         background: $theme-color-4;
+        position: absolute;
+        bottom: 31px;
+        left: 0;
+        width: calc(100% - 6px);
+        margin-right: 14px;
 
         &-white {
             color: #FFFFFF;

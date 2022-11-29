@@ -3,12 +3,12 @@
 
         <div class="flex justify-between items-center">
             <h4>Need some help?</h4>
-            <div class="cursor-pointer" onclick="onCloseQuestionDialog()">
+            <div class="cursor-pointer question-dialog" onclick="onCloseQuestionDialog()">
                 <i class="fa-solid fa-xmark fa-xl"></i>
             </div>
         </div>
 
-        <div class="question-dialog-text mt-6 mb-4">
+        <div class="p2 question-dialog-text mt-6 mb-4">
             We can help you with anything you need.
             Just type your question here and we’ll reply as fast as possible
         </div>

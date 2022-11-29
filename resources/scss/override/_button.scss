@@ -24,6 +24,7 @@ button {
             background: $button-background-hover;
             color: $button-color-hover;
             border: $button-border-hover;
+            text-decoration: underline;
         }
 
         &:disabled {
@@ -43,6 +44,7 @@ button {
         &:hover:enabled {
             color: #FFFFFF;
             background: $theme-color-4;
+            text-decoration: underline;
         }
 
         //&:disabled {
