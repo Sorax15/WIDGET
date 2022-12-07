@@ -1,6 +1,11 @@
 @import "@theme";
+@import "../../scss/mixins/query.mixin";
 
 .card {
     border-radius: $card-border-radius;
     padding: 20px 16px;
+
+    @include phone-query {
+        padding: 16px 8px;
+    }
 }

@@ -1,0 +1,254 @@
+@import '@theme';
+@import "../../scss/common/colors";
+
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    height: 100%;
+    width: 280px;
+    min-width: 280px;
+    background: $common-color-1;
+    color: $theme-color-4;
+    padding: 32px 0;
+    transition: all ease-in-out .2s;
+    z-index: 2;
+
+    &.close {
+        width: 72px;
+        min-width: 72px;
+    }
+
+    header {
+        padding: 0 20px;
+        position: absolute;
+
+        .image {
+            margin-bottom: 35px; // hardcode
+            display: block;
+
+            img {
+                width: 100%;
+                height: 30px;
+                max-width: 240px;
+            }
+        }
+
+        .text {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        .toogle-icon {
+            z-index: 2;
+            top: 76px;
+            right: -12px;
+
+            @at-root .close#{&} {
+                left: 65%;
+                transform: scale(-1, 1);
+            }
+        }
+    }
+
+    .menu-bar {
+        margin-top: 140px;
+
+        .menu {
+            &-items {
+                .menu-item {
+                    cursor: pointer;
+                    padding: 20px;
+                    font-size: 16px;
+                    line-height: 19px;
+                    font-weight: 600;
+                    white-space: nowrap;
+                    color: $theme-color-4;
+
+                    .img {
+                        width: 32px;
+                        height: 32px;
+                        min-width: 32px;
+                        background-color: $common-color-3;
+
+                        &-home {
+                            -webkit-mask: url("/img/icons/home.svg") no-repeat center;
+                            mask: url("/img/icons/home.svg") no-repeat center;
+                        }
+
+                        &-user {
+                            -webkit-mask: url("/img/icons/user.svg") no-repeat center;
+                            mask: url("/img/icons/user.svg") no-repeat center;
+                        }
+
+                        &-vehicle {
+                            -webkit-mask: url("/img/icons/vehicle.svg") no-repeat center;
+                            mask: url("/img/icons/vehicle.svg") no-repeat center;
+                        }
+
+                        &-trade {
+                            -webkit-mask: url("/img/icons/trade.svg") no-repeat center;
+                            mask: url("/img/icons/trade.svg") no-repeat center;
+                        }
+
+                        &-calculate {
+                            -webkit-mask: url("/img/icons/calculator.svg") no-repeat center;
+                            mask: url("/img/icons/calculator.svg") no-repeat center;
+                        }
+
+                        &-schedule {
+                            -webkit-mask: url("/img/icons/schedule.svg") no-repeat center;
+                            mask: url("/img/icons/schedule.svg") no-repeat center;
+                        }
+
+                        &-coins {
+                            -webkit-mask: url("/img/icons/coins.svg") no-repeat center;
+                            mask: url("/img/icons/coins.svg") no-repeat center;
+                        }
+
+                        &-summary {
+                            -webkit-mask: url("/img/icons/summary.svg") no-repeat center;
+                            mask: url("/img/icons/summary.svg") no-repeat center;
+                        }
+                    }
+
+                    &.active {
+                        background: $theme-color-2;
+                        color: #FFFFFF;
+
+                        .img {
+                            background-color: #FFFFFF;
+                        }
+                    }
+
+                    &:hover:not(.active) {
+                        color: $theme-color-4;
+                        background: $common-color-2;
+                        transition: background-color ease-in-out .2s;
+
+                        .router-link {
+                            color: $theme-color-2;
+                        }
+
+                        .img {
+                            background-color: $common-color-3;
+                        }
+                    }
+
+                    .text {
+                        transition: all ease-in-out .2s;
+
+                        @at-root .close#{&} {
+                            transition: all ease-in-out .2s;
+                            opacity: 0;
+                        }
+                    }
+
+                    .router-link {
+                        color: $theme-color-2;
+                        transition: all ease-in-out .2s;
+
+                        @at-root .close#{&} {
+                            transition: all ease-in-out .2s;
+                            opacity: 0;
+                        }
+                    }
+
+                    .not-done {
+                        transition: all ease-in-out .2s;
+
+                        @at-root .close#{&} {
+                            transition: all ease-in-out .2s;
+                            opacity: 0;
+                        }
+                    }
+
+                    .router-link.hidden + .not-done  {
+                        color: rgba(255, 255, 255, 0.8);
+                    }
+                }
+            }
+        }
+    }
+
+    .progress {
+        position: absolute;
+        bottom: 31px;
+        left: 0;
+        width: calc(100% - 14px);
+        margin-right: 14px;
+        background: $theme-color-4;
+        color: #FFFFFF;
+
+        &-white {
+            color: #FFFFFF;
+
+            i {
+                color: #FFFFFF;
+                margin-right: 6px;
+            }
+        }
+
+        &-dark {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        @at-root .close#{&} {
+            display: none;
+        }
+
+        progress {
+            border: 0;
+            height: 10px;
+            border-radius: 36px;
+            background: $common-color-4;
+        }
+
+        progress::-webkit-progress-bar {
+            border: 0;
+            height: 10px;
+            border-radius: 24px;
+            background: $common-color-4
+        }
+
+        progress::-webkit-progress-value {
+            border: 0;
+            height: 10px;
+            border-radius: 24px;
+            background-color: #FFFFFF !important;
+        }
+
+        progress::-moz-progress-bar {
+            border: 0;
+            height: 10px;
+            border-radius: 24px;
+            background: rgba(255, 255, 255, 0.5);
+        }
+    }
+
+    .progress-close {
+        background: $theme-color-4;
+        position: absolute;
+        bottom: 31px;
+        left: 0;
+        width: calc(100% - 6px);
+        margin-right: 14px;
+
+        &-white {
+            color: #FFFFFF;
+
+            margin-left: 10px;
+
+            i {
+                color: #FFFFFF;
+            }
+        }
+
+        &-dark {
+            color: rgba(255, 255, 255, 0.8);
+        }
+    }
+}
