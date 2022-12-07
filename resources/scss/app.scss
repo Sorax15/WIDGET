@@ -8,6 +8,7 @@
 @import "components";
 @import "pages";
 @import "modals";
+@import "mixins";
 @import "@theme";
 
 * {
@@ -22,6 +23,10 @@ body {
             ~ .content {
                 left: 88px;
                 width: calc(100% - 88px);
+
+                @include phone-query {
+                    width: 100%;
+                }
             }
         }
     }
@@ -32,6 +37,12 @@ body {
         left: 280px;
         width: calc(100% - 280px);
         transition: all .2s ease;
+
+        @include phone-query {
+            width: 100%;
+            position: unset;
+            padding: 0 16px;
+        }
     }
 }
 

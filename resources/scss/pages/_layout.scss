@@ -1,0 +1,11 @@
+@import "../../scss/mixins/query.mixin";
+
+.layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+
+    @include phone-query {
+        flex-direction: column;
+    }
+}

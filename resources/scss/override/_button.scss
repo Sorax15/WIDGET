@@ -1,5 +1,7 @@
 @import '@theme';
 
+@import "../../scss/mixins/query.mixin";
+
 button {
     border: none;
     padding: 11.5px 42px;
@@ -8,6 +10,10 @@ button {
     font-size: 16px;
     line-height: 19px;
     border-radius: $button-border-radius;
+
+    @include phone-query {
+        padding: 11.5px 25px;
+    }
 
     i {
         width: 15px;

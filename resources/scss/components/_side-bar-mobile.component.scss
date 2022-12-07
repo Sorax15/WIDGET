@@ -1,66 +1,87 @@
 @import '@theme';
 @import "../../scss/common/colors";
+@import "../../scss/mixins/query.mixin";
 
-.sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    min-height: 100vh;
-    height: 100%;
-    width: 280px;
-    min-width: 280px;
-    background: $common-color-1;
-    color: $theme-color-4;
-    padding: 32px 0;
-    transition: all ease-in-out .2s;
+body.mobile-navigation {
+    overflow: hidden;
+}
 
-    &.close {
-        width: 72px;
-        min-width: 72px;
+.sidebar-mobile {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background: $common-color-4;
+    position: relative;
+
+    @include phone-query {
+        display: flex;
     }
 
-    header {
-        padding: 0 20px;
+    &_ask {
+        width: 51px;
+        height: 50px;
+        background: $common-color-2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-        .image {
-            margin-bottom: 35px; // hardcode
-            display: block;
-
-            img {
-                width: 100%;
-                height: 30px;
-                max-width: 240px;
-            }
-        }
-
-        .text {
-            font-weight: 600;
-            font-size: 20px;
-            line-height: 24px;
-        }
-
-        .toogle-icon {
-            top: 76px;
-            right: -12px;
-
-            @at-root .close#{&} {
-                left: 50%;
-                transform: translateX(-50%) scale(-1, 1);
-            }
+        img {
+            width: 24px;
+            height: 24px;
         }
     }
+
+    &_name {
+        font-size: 14px;
+        font-weight: 500;
+        color: #FFFFFF;
+    }
+
+    &_toogle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 51px;
+
+        img {
+            width: 24px;
+            height: 24px;
+        }
+    }
+
 
     .menu-bar {
-        margin-top: 27px;
+        display: none;
+        position: absolute;
+        top: 0;
+        z-index: 99999;
+        width: 100%;
+        background: $common-color-1;
+        height: 100vh;
 
         .menu {
+
+            #close-mobile {
+                padding: 16px;
+            }
+
+            .dealer-name {
+                padding: 16px;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 24px;
+                margin-bottom: 39px;
+            }
+
             &-items {
                 .menu-item {
                     cursor: pointer;
-                    padding: 20px;
                     font-size: 16px;
                     line-height: 19px;
                     font-weight: 600;
+                    padding: 14px 16px;
                     white-space: nowrap;
                     color: $theme-color-4;
 
@@ -126,7 +147,7 @@
                         transition: background-color ease-in-out .2s;
 
                         .router-link {
-                            color: $theme-color-3;
+                            color: $theme-color-2;
                         }
 
                         .img {
@@ -134,34 +155,15 @@
                         }
                     }
 
-                    .text {
-                        transition: all ease-in-out .2s;
-
-                        @at-root .close#{&} {
-                            transition: all ease-in-out .2s;
-                            opacity: 0;
-                        }
-                    }
 
                     .router-link {
                         color: $theme-color-2;
-                        transition: all ease-in-out .2s;
-
-                        @at-root .close#{&} {
-                            transition: all ease-in-out .2s;
-                            opacity: 0;
-                        }
                     }
 
-                    .not-done {
-                        transition: all ease-in-out .2s;
 
-                        @at-root .close#{&} {
-                            transition: all ease-in-out .2s;
-                            opacity: 0;
-                        }
+                    .router-link.hidden + .not-done {
+                        color: rgba(255, 255, 255, 0.8);
                     }
-
                 }
             }
         }
@@ -181,6 +183,7 @@
 
             i {
                 color: #FFFFFF;
+                margin-right: 6px;
             }
         }
 
@@ -188,9 +191,6 @@
             color: rgba(255, 255, 255, 0.8);
         }
 
-        @at-root .close#{&} {
-            display: none;
-        }
 
         progress {
             border: 0;
@@ -220,25 +220,5 @@
             background: rgba(255, 255, 255, 0.5);
         }
     }
-
-    .progress-close {
-        background: $theme-color-4;
-        position: absolute;
-        bottom: 31px;
-        left: 0;
-        width: calc(100% - 6px);
-        margin-right: 14px;
-
-        &-white {
-            color: #FFFFFF;
-
-            i {
-                color: #FFFFFF;
-            }
-        }
-
-        &-dark {
-            color: rgba(255, 255, 255, 0.8);
-        }
-    }
 }
+

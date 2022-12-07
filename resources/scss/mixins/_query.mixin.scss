@@ -1,0 +1,19 @@
+@mixin phone-query {
+    @media (max-width: 599px) { @content; }
+}
+
+@mixin tablet-query {
+    @media (min-width: 600px) { @content; }
+}
+
+@mixin tablet-landscape-query {
+    @media (min-width: 900px) { @content; }
+}
+
+@mixin notebook-query {
+    @media (min-width: 1200px) { @content; }
+}
+
+@mixin desktop-query {
+    @media (min-width: 1800px) { @content; }
+}
