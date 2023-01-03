@@ -24,6 +24,10 @@ $icon-filter-hover: invert(69%) sepia(39%) saturate(738%) hue-rotate(7deg) brigh
 $font-family: 'Hyundai Sans Head Office', sans-serif;
 $font-path: '/../fonts/hyundai';
 
+// DIALOG
+$dialog-border-radius: 0;
+$dialog-overlay-color: rgba(0, 0, 0, 0.60);
+
 @font-face {
     font-family: "Hyundai Sans Head Office";
     src: url("#{$font-path}/HyundaiSansHeadOffice-Light.woff2") format("woff2"),

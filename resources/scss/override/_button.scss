@@ -10,6 +10,7 @@ button {
     font-size: 16px;
     line-height: 19px;
     border-radius: $button-border-radius;
+    max-height: 42px;
 
     @include phone-query {
         padding: 11.5px 25px;
@@ -34,7 +35,7 @@ button {
         }
 
         &:disabled {
-            background: $theme-color-4;
+            background: $common-color-2;
         }
 
         i {
@@ -53,10 +54,10 @@ button {
             text-decoration: underline;
         }
 
-        //&:disabled {
-        //    color: var(--secondary-button-disabled);
-        //    border: 1px solid var(--secondary-button-disabled);
-        //}
+        &:disabled {
+            color: $common-color-2;
+            border-color: $common-color-2;
+        }
 
         //i {
         //    color: red;
@@ -67,7 +68,7 @@ button {
         border-radius: 8px;
         padding: 9px 10px;
         font-weight: 600;
-        font-size: 20px;
+        font-size: 16px;
         line-height: 24px;
         color: $theme-color-2;
 

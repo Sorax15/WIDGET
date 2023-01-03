@@ -1,0 +1,74 @@
+.leave-dialog {
+    i {
+        color: #5C6077;
+    }
+
+    h3, .p2 {
+        margin-bottom: 22px;
+    }
+
+    .card {
+
+        img {
+            width: 214px;
+            height: 144px;
+            object-fit: cover;
+        }
+
+        .car-name {
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 34px;
+        }
+
+        .deal-price {
+            margin-top: 15px;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        .price {
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 33px;
+            margin-top: 4px;
+
+            span {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 17px;
+            }
+        }
+
+        a {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 19px;
+        }
+    }
+
+    .send {
+        margin-top: 15px;
+    }
+
+    .inputs {
+        margin-top: 22px;
+
+        .input {
+            &:first-child {
+                margin-right: 12px;
+            }
+
+            &:last-child {
+                margin-left: 12px;
+            }
+        }
+    }
+
+    .phone {
+        .input {
+            margin-right: 13px;
+        }
+    }
+}

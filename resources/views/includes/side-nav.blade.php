@@ -4,14 +4,38 @@
             <span class="image" id="logo">
                 <img src="https://via.placeholder.com/240x29" alt="test">
             </span>
+
             <div class="text logo-text">
-                <span class="name">Express Buying at Homer Skeleton Ford</span>
+                <span class="name">
+                    Carter Chevrolet Cadillac Buick General Motors Co.Northshore Ltd
+                </span>
             </div>
 
             <div id="toogle-icon"
                  class="toogle-icon absolute theme-color-2-bg cursor-pointer rounded-full w-6 h-6 flex justify-center items-center">
                 <i class="theme-color-1-fc fa-solid fa-chevron-left"></i>
             </div>
+
+            <div class="choose-expert">
+
+                {{-- width not user  --}}
+                <div class="not-user flex flex-row items-center">
+                    <div class="avatar"></div>
+                    <a href="{{ url('/choose-expert') }}">Choose Your Expert</a>
+                </div>
+
+                {{-- selected users  --}}
+{{--                <div class="selected-user flex flex-row items-center">--}}
+{{--                    <img src="https://via.placeholder.com/52x52" class="rounded-full" alt="test">--}}
+{{--                    <div class="flex flex-col">--}}
+{{--                        <div class="name">Amber Brock</div>--}}
+{{--                        <div class="role">Solutions Provider</div>--}}
+{{--                        <a href="{{ url('/choose-expert') }}">Change Expert</a>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+            </div>
+
+            <div class="separator"></div>
         </header>
 
         <div class="menu-bar">
@@ -23,24 +47,26 @@
                         <div class="text nav-text ml-2.5">Home</div>
                     </a>
 
-                    <a href="{{ url('/choose-expert') }}"
-                       class="menu-item flex flex-row items-center {{ request()->is('choose-expert*') || request()->is('expert-details*')  ? 'active' : '' }}">
-                        <div class="img img-user"></div>
+{{--                    <a href="{{ url('/choose-expert') }}"--}}
+{{--                       class="menu-item flex flex-row items-center {{ request()->is('choose-expert*') || request()->is('expert-details*')  ? 'active' : '' }}">--}}
+{{--                        <div class="img img-user"></div>--}}
 
-                        <div class="flex flex-col ml-2.5">
-                            <span class="text nav-text">Choose your expert</span>
+{{--                        <div class="flex flex-col ml-2.5">--}}
+{{--                            <span class="text nav-text">Choose your expert</span>--}}
 
-                            <div class="flex flex-row">
-                                <span
-                                    class="router-link uppercase text-xs mr-2 {{ request()->is('choose-expert*') || request()->is('expert-details*')  ? 'hidden' : '' }}">
-                                    start now
-                                </span>
-                                <span class="text-xs common-color-4-fc not-done">SAVE 20 MIN</span>
-                            </div>
-                        </div>
-                    </a>
+{{--                            <div class="flex flex-row">--}}
+{{--                                <span--}}
+{{--                                    class="router-link uppercase text-xs mr-2 {{ request()->is('choose-expert*') || request()->is('expert-details*')  ? 'hidden' : '' }}">--}}
+{{--                                    start now--}}
+{{--                                </span>--}}
+{{--                                <span class="text-xs common-color-4-fc not-done">SAVE 20 MIN</span>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </a>--}}
 
-                    <div class="menu-item flex flex-row items-center">
+
+                    <a href="{{ url('/trade-in') }}"
+                       class="menu-item flex flex-row items-center {{ request()->is('trade-in*') ? 'active' : '' }}">
                         <div class="img img-trade"></div>
 
                         <div class="flex flex-col ml-2.5">
@@ -51,7 +77,7 @@
                                 <span class="text-xs common-color-4-fc not-done">SAVE 30 MIN</span>
                             </div>
                         </div>
-                    </div>
+                    </a>
 
                     <div class="menu-item flex flex-row items-center">
                         <div class="img img-vehicle"></div>

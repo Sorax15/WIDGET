@@ -1,8 +1,8 @@
 <nav class="sidebar-mobile flex">
-    <div class="sidebar-mobile_ask" onclick="onOpenQuestionDialog('', 'center')">
+    <div class="sidebar-mobile_ask" onclick="onOpenQuestionDialog('', 'center', 'rgba(0, 38, 122, 0.64)')">
         <img src="{{ asset('img/icons/ask.svg') }}" alt="ask">
     </div>
-    <div class="sidebar-mobile_name">Express Buying at Homer Skeleton Ford</div>
+    <div class="sidebar-mobile_name">Carter Chevrolet Cadillac Buick General Motors Co. Northshore Ltd</div>
 
     <div id="open-mobile" class="sidebar-mobile_toogle">
         <img src="{{ asset('img/icons/toogle.svg') }}" alt="toogle">

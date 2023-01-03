@@ -12,7 +12,7 @@ body.mobile-navigation {
     align-items: center;
     width: 100%;
     height: 50px;
-    background: $common-color-4;
+    background: $theme-color-2;
     position: relative;
 
     @include phone-query {
@@ -20,12 +20,15 @@ body.mobile-navigation {
     }
 
     &_ask {
-        width: 51px;
+        min-width: 51px;
+        max-width: 51px;
+        width: 100%;
         height: 50px;
-        background: $common-color-2;
+        background: $theme-color-4;
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-right: 8px;
 
         img {
             width: 24px;
@@ -34,8 +37,9 @@ body.mobile-navigation {
     }
 
     &_name {
-        font-size: 14px;
         font-weight: 500;
+        font-size: 12px;
+        line-height: 17px;
         color: #FFFFFF;
     }
 
@@ -43,7 +47,10 @@ body.mobile-navigation {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 51px;
+        min-width: 51px;
+        max-width: 51px;
+        width: 100%;
+        margin-left: 10px;
 
         img {
             width: 24px;
@@ -60,6 +67,7 @@ body.mobile-navigation {
         width: 100%;
         background: $common-color-1;
         height: 100vh;
+        overflow-y: auto;
 
         .menu {
 

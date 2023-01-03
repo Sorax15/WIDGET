@@ -1,7 +1,7 @@
 @import "../common/colors";
 @import "@theme";
 
-.input, .textarea {
+.input, .textarea, .select {
     display: flex;
     flex-direction: column;
 
@@ -9,7 +9,7 @@
         font-weight: 600;
         font-size: 14px;
         line-height: 20px;
-        margin-bottom: 3px;
+        margin-bottom: 6px;
         color: $theme-color-4;
 
         &:has(~ :is(.errors)) {
@@ -28,7 +28,7 @@
 
 
 
-input, textarea {
+input, textarea, select {
 
     &:not([type=checkbox]) {
         border-radius: $input-border-radius;
@@ -139,4 +139,3 @@ input, textarea {
         }
     }
 }
-

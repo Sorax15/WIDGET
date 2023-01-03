@@ -10,6 +10,9 @@ const config = mix
     .js('resources/js/navbar/navbar.js', 'public/js/navbar')
     .js('resources/js/navbar/navbar-mobile.js', 'public/js/navbar')
     .js('resources/js/modals/question.dialog.js', 'public/js/modals')
+    .js('resources/js/modals/response-dialog.js', 'public/js/modals')
+    .js('resources/js/pages/trade-in.js', 'public/js/pages')
+    .js('resources/js/pages/layout.js', 'public/js/pages')
     .postCss('resources/css/app.css', 'public/css', [require('postcss-import'), require('tailwindcss')])
     .copyDirectory('resources/fonts', 'public/fonts')
     .options({processCssUrls: false});

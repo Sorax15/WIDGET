@@ -1,0 +1,138 @@
+@import "@theme";
+
+.wrapper-trade-in {
+    max-width: 504px;
+    margin: 0 auto;
+    position: relative;
+
+    .subtitle {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .separator {
+        height: 1px;
+        width: 100%;
+        background: $common-color-2;
+        margin-bottom: 24px;
+    }
+
+    #yearMakeModel {
+        position: relative;
+    }
+
+    .text-info {
+        margin-top: 20px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        color: rgba(0, 0, 0, 0.54);
+    }
+
+    .card-error {
+        padding: 12px 25px 18px 21px;
+
+        img {
+            width: 18px;
+            height: 18px;
+            margin-right: 5px;
+        }
+
+        .title {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+            color: #FF3C47;
+        }
+
+        .subtitle {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 22px;
+            color: #2D364C;
+            margin: 12px 0 22px 0;
+        }
+    }
+
+    .success-trade-in {
+
+        .info {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px;
+            color: $theme-color-3;
+        }
+
+        .link-href {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 19px;
+            color: $theme-color-3;
+        }
+
+        .estimated-trade-in {
+            margin-top: 38px;
+
+            &_value {
+                margin-right: 41px;
+
+                .title {
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 22px;
+                    color: $theme-color-2;
+                }
+
+                .value {
+                    font-weight: 600;
+                    font-size: 32px;
+                    line-height: 38px;
+                    color: $theme-color-3;
+                }
+            }
+
+            &_payoff {
+                margin-right: 11px;
+                width: 100px;
+            }
+
+            &_text {
+                font-weight: 500;
+                font-size: 8px;
+                line-height: 10px;
+                width: 175px;
+            }
+        }
+
+        .trade-in-equity {
+            margin-top: 21px;
+            padding: 11px 11px 13px 17px;
+
+            .title {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                color: $theme-color-2;
+            }
+
+            .subtitle {
+                font-weight: 600;
+                font-size: 28px;
+                line-height: 33px;
+                color: $theme-color-3;
+                margin-top: 4px;
+            }
+
+            .text {
+                width: 50%;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 18px;
+            }
+
+        }
+    }
+
+
+}
