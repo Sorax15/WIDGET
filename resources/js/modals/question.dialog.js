@@ -1,7 +1,15 @@
-let questionModal = null;
+import { dialogService } from './dialog';
 
-window.onOpenQuestionDialog = (className = 'fixed right-9 bottom-32', position = 'bottom-end') => {
-    questionModal = Swal.fire({
+$('#open-question-dialog').click(onOpenQuestionDialog);
+
+$('.question-dialog-checkbox').change(() => {
+    $('.send-question').prop('disabled', $(this).prop('checked'));
+});
+
+$('#send-question').click(onSendForm);
+
+function onOpenQuestionDialog(className = 'fixed right-9 bottom-32', position = 'bottom-end') {
+    const options = {
         customClass: className,
         template: '#question-dialog',
         width: '342px',
@@ -10,18 +18,16 @@ window.onOpenQuestionDialog = (className = 'fixed right-9 bottom-32', position =
         allowOutsideClick: true,
         showConfirmButton: false,
         allowEscapeKey: false
-    });
+    }
+
+    dialogService.onOpenDialog(
+        options,
+        '.question-dialog-close',
+        () => dialogService.onCloseDialog()
+    );
 }
 
-window.onCloseQuestionDialog = () => {
-    questionModal.close();
-}
-
-window.onChangeCheckbox = (value) => {
-    document.getElementById("send-question").disabled = !value.checked;
-}
-
-window.onSendForm = function () {
+function onSendForm() {
     const token = $('#token').val();
     const name = $('#name').val();
     const phone = $('#phone').val();

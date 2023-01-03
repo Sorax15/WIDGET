@@ -1,5 +1,9 @@
+@import "@theme";
+
 .swal2-container.swal2-backdrop-show {
-    background: rgba(0, 0, 0, 0.88);
+    .response-dialog {
+        background: none;
+    }
 
     .swal2-popup {
         padding: 0;
@@ -7,7 +11,7 @@
         font-size: inherit;
         color: inherit;
         border: 1px solid #D9DCEA;
-        border-radius: 14px;
+        border-radius: $dialog-border-radius;
 
         .swal2-html-container {
             margin: 0;

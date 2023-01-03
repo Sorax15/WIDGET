@@ -1,9 +1,26 @@
+@import "@theme";
+
 .expert-wrapper {
+    margin-top: 12px;
+
+    .select-header-text {
+        margin-bottom: 52px;
+    }
 
     .list-experts {
-        max-width: 280px;
-        min-width: 280px;
+        max-width: 266px;
+        min-width: 266px;
         width: 100%;
+        margin-top: 10px;
+        margin-right: 12px;
+
+        .badge {
+            &.simple {
+                color: #FFFFFF;
+                padding: 1px 5px;
+                background: $common-color-6;
+            }
+        }
 
         img {
             width: 60px;
@@ -12,53 +29,107 @@
 
         .item-expert {
             padding: 11px 13px;
+            border-radius: 5px;
 
-            &:not(&:first-child) {
-                margin-top: 5px;
+            &.select {
+                background: $theme-color-2;
+                flex-direction: row;
+
+                .name {
+                    color: #FFFFFF;
+                }
+
+                .role {
+                    color: #FFFFFF;
+                    opacity: 0.7;
+                }
+            }
+
+            &:hover:not(.select) {
+                cursor: pointer;
+                background: $common-color-2;
             }
 
             .name {
                 font-weight: 600;
                 font-size: 14px;
                 line-height: 17px;
-                color: #1385F0;
+                color: $theme-color-4;
             }
 
             .role {
                 font-weight: 500;
                 font-size: 12px;
                 line-height: 14px;
-                color: #5C6077;
+                color: $common-color-4;
                 opacity: 0.7;
             }
         }
     }
 
-    .email, .phone {
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 169.5%;
+    .details-expert {
+
+        .total {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 21px;
+            color: $common-color-4;
+            margin-bottom: 3px;
+        }
+
+        button {
+            &.link {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 19px;
+            }
+        }
+
+        .review-creator {
+            color: $common-color-4;
+        }
+
+        .rating {
+            i {
+                color: $theme-color-3;
+
+                &:not(:last-child) {
+                    margin-right: 8px;
+                }
+            }
+        }
     }
 
+
     .achievement {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: $theme-color-4;
+
         &-img {
             -webkit-mask: url("/img/icons/check-certified.svg") no-repeat center;
             mask: url("/img/icons/check-certified.svg") no-repeat center;
-            background-color: #1385F0;
+            background-color: $theme-color-2;
             width: 18px;
             height: 18px;
         }
     }
 
     .separator {
-        background: #D9DCEA;
+        background: $common-color-2;
     }
 
     .bio {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
         width: 293px;
+        color: $theme-color-4;
 
         img {
             width: 293px;
+            margin-bottom: 91px;
         }
     }
 
@@ -89,8 +160,8 @@
     }
 
     .card-expert {
-        background: #EBEEF5;
-        border-radius: 14px;
+        background: $common-color-1;
+        border-radius: $card-border-radius;
         padding: 16px;
 
         .info {
@@ -112,7 +183,7 @@
 
                 &:last-child:after {
                     position: absolute;
-                    background: rgba(0, 38, 122, 0.7);
+                    background: rgba(35, 31, 32, 0.5);
                     content: "+ 23 photos";
                     color: #FFFFFF;
                     font-weight: 600;
@@ -120,7 +191,7 @@
                     line-height: 169.5%;
                     width: 164px;
                     height: 110px;
-                    top: 9px;
+                    top: 0;
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -128,4 +199,15 @@
             }
         }
     }
+
+    .buttons {
+        button {
+            margin-bottom: 30px;
+        }
+    }
+
+    .bio-block {
+        margin-right: 25px;
+    }
+
 }

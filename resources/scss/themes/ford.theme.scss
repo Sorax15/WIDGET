@@ -20,6 +20,11 @@ $input-border-radius: 6px;
 $icon-filter: invert(68%) sepia(4%) saturate(19%) hue-rotate(18deg) brightness(98%) contrast(82%);
 $icon-filter-hover: invert(100%) sepia(0%) saturate(0%) hue-rotate(136deg) brightness(103%) contrast(101%);
 
+// DIALOG
+$dialog-border-radius: 4px;
+$dialog-overlay-color: rgba(35, 31, 32, 0.60);
+
+// FONTS
 $font-family: "Ford Antenna", sans-serif;
 $font-path: '/../fonts/ford';
 

@@ -44,6 +44,25 @@ body {
             padding: 0 16px;
         }
     }
+
+    .ui-helper-hidden-accessible {
+        display: none;
+    }
+
+    .ui-tooltip {
+        background: #4a4a4a;
+        color: #96f226;
+        border: 2px solid #454545;
+        border-radius: 0;
+        box-shadow: 0 0
+    }
+
+    .ui-autocomplete {
+        background: #FFFFFF;
+        border-radius: 6px;
+        border: 1px solid $common-color-4;
+        margin: 6px 0 0 0;
+    }
 }
 
 

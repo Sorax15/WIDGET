@@ -14,8 +14,8 @@
     &.simple {
         font-size: 14px;
         font-weight: 700;
-        color: #FAFAFA;
-        background: $theme-color-3;
+        color: #FFFFFF;
+        background: $common-color-6;
         border-radius: 5px;
         padding: 3px 11px;
         height: fit-content;
@@ -32,6 +32,7 @@
         border-top-left-radius: 24px;
         border-bottom-left-radius: 24px;
         clip-path: polygon(100% 0, 90% 47%, 100% 100%, 0 100%, 0 0);
+        color: #FFFFFF;
 
         img {
             margin-right: 5px;
@@ -42,11 +43,11 @@
         }
 
         &.blue {
-            background: #0067C7;
+            background: $common-color-6;
         }
 
         &.green {
-            background: #8AC048;
+            background: $common-color-5;
         }
     }
 }

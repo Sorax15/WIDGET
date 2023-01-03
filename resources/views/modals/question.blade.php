@@ -3,7 +3,7 @@
 
         <div class="flex justify-between items-center">
             <h4>Need some help?</h4>
-            <div class="cursor-pointer question-dialog" onclick="onCloseQuestionDialog()">
+            <div class="cursor-pointer question-dialog question-dialog-close">
                 <i class="fa-solid fa-xmark fa-xl"></i>
             </div>
         </div>
@@ -31,7 +31,7 @@
         </div>
 
         <div class="checkbox">
-            <input id="checkbox" type="checkbox" onclick="onChangeCheckbox(this)">
+            <input id="checkbox" type="checkbox" class="question-dialog-checkbox">
             <label for="checkbox">
                 I agree to receiving Text Messages from Homer Skelton Ford.
                 You will receive a text message response from phone number
@@ -39,6 +39,6 @@
             </label>
         </div>
 
-        <button class="primary w-full mt-9" disabled id="send-question" onclick="onSendForm()">Send Question</button>
+        <button class="primary w-full mt-9" disabled id="send-question">Send Question</button>
     </swal-html>
 </template>

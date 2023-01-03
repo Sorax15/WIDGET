@@ -9,14 +9,14 @@
 @section('content')
     <div class="expert-wrapper px-16 w-full">
         <h2 class="mb-6">Choose your expert</h2>
-        <h3 class="mb-12">Please select your perfect salesperson in one click</h3>
+        <h3 class="select-header-text">Please select your perfect salesperson in one click</h3>
 
         <div class="mb-8 flex flex-row">
             <div class="flex flex-row justify-between">
                 <div class="flex flex-col">
                     <div class="list-experts">
-                        <div class="flex flex-row item-expert">
-                            <img class="mr-2.5 rounded-full" src="https://via.placeholder.com/60x60" alt="img">
+                        <div class="flex flex-row item-expert select">
+                            <img class="mr-2 rounded-full" src="https://via.placeholder.com/60x60" alt="img">
                             <div class="flex flex-col">
                                 <div class="name">Amber Brock</div>
                                 <div class="role mb-1.5">Sales Agent</div>
@@ -24,7 +24,7 @@
                             </div>
                         </div>
                         <div class="flex flex-row item-expert">
-                            <img class="mr-2.5 rounded-full" src="https://via.placeholder.com/60x60" alt="img">
+                            <img class="mr-2 rounded-full" src="https://via.placeholder.com/60x60" alt="img">
                             <div class="flex flex-col">
                                 <div class="name">Amber Brock</div>
                                 <div class="role mb-1.5">Sales Agent</div>
@@ -32,7 +32,7 @@
                             </div>
                         </div>
                         <div class="flex flex-row item-expert">
-                            <img class="mr-2.5 rounded-full" src="https://via.placeholder.com/60x60" alt="img">
+                            <img class="mr-2 rounded-full" src="https://via.placeholder.com/60x60" alt="img">
                             <div class="flex flex-col">
                                 <div class="name">Amber Brock</div>
                                 <div class="role mb-1.5">Sales Agent</div>
@@ -40,7 +40,7 @@
                             </div>
                         </div>
                         <div class="flex flex-row item-expert">
-                            <img class="mr-2.5 rounded-full" src="https://via.placeholder.com/60x60" alt="img">
+                            <img class="mr-2 rounded-full" src="https://via.placeholder.com/60x60" alt="img">
                             <div class="flex flex-col">
                                 <div class="name">Amber Brock</div>
                                 <div class="role mb-1.5">Sales Agent</div>
@@ -48,7 +48,7 @@
                             </div>
                         </div>
                         <div class="flex flex-row item-expert">
-                            <img class="mr-2.5 rounded-full" src="https://via.placeholder.com/60x60" alt="img">
+                            <img class="mr-2 rounded-full" src="https://via.placeholder.com/60x60" alt="img">
                             <div class="flex flex-col">
                                 <div class="name">Amber Brock</div>
                                 <div class="role mb-1.5">Sales Agent</div>
@@ -56,7 +56,7 @@
                             </div>
                         </div>
                         <div class="flex flex-row item-expert">
-                            <img class="mr-2.5 rounded-full" src="https://via.placeholder.com/60x60" alt="img">
+                            <img class="mr-2 rounded-full" src="https://via.placeholder.com/60x60" alt="img">
                             <div class="flex flex-col">
                                 <div class="name">Amber Brock</div>
                                 <div class="role mb-1.5">Sales Agent</div>
@@ -64,7 +64,7 @@
                             </div>
                         </div>
                         <div class="flex flex-row item-expert">
-                            <img class="mr-2.5 rounded-full" src="https://via.placeholder.com/60x60" alt="img">
+                            <img class="mr-2 rounded-full" src="https://via.placeholder.com/60x60" alt="img">
                             <div class="flex flex-col">
                                 <div class="name">Amber Brock</div>
                                 <div class="role mb-1.5">Sales Agent</div>
@@ -72,7 +72,7 @@
                             </div>
                         </div>
                         <div class="flex flex-row item-expert">
-                            <img class="mr-2.5 rounded-full" src="https://via.placeholder.com/60x60" alt="img">
+                            <img class="mr-2 rounded-full" src="https://via.placeholder.com/60x60" alt="img">
                             <div class="flex flex-col">
                                 <div class="name">Amber Brock</div>
                                 <div class="role mb-1.5">Sales Agent</div>
@@ -80,7 +80,7 @@
                             </div>
                         </div>
                         <div class="flex flex-row item-expert">
-                            <img class="mr-2.5 rounded-full" src="https://via.placeholder.com/60x60" alt="img">
+                            <img class="mr-2 rounded-full" src="https://via.placeholder.com/60x60" alt="img">
                             <div class="flex flex-col">
                                 <div class="name">Amber Brock</div>
                                 <div class="role mb-1.5">Sales Agent</div>
@@ -93,7 +93,7 @@
             </div>
 
 
-            <div class="flex flex-col ml-8">
+            <div class="flex flex-col ml-8 mt-1 details-expert">
                 <div class="flex flex-row justify-between">
                     <div class="flex flex-row">
                         <div class="image mr-6">
@@ -103,7 +103,7 @@
                             <h4>Amber Brock</h4>
 
                             <div class="flex flex-row mt-1">
-                                <p class="mr-6">Sales Agent</p>
+                                <div class="mr-6 p1 sales-agent">Sales Agent</div>
                                 <div class="badge simple mr-5">4.8 <i class="fa-solid fa-star"></i></div>
                                 <div class="badge rounded-one blue uppercase mr-2.5">
                                     <img src="{{ asset('img/icons/check-certified.svg') }}" alt="certified">
@@ -115,28 +115,28 @@
                                 </div>
                             </div>
 
-                            <div class="font-semibold email common-color-3-fc mt-3">amber.brock@homerskeltonford.com</div>
-                            <div class="font-semibold phone common-color-3-fc">(901) 360-2122</div>
+                            <div class="p1 mt-2">amber.brock@homerskeltonford.com</div>
+                            <div class="p1">(901) 360-2122</div>
                         </div>
                     </div>
 
-                    <div class="grid grid-cols-1 gap-x-12">
-                        <button class="primary h-fit" onclick="onSelectSalesPerson()">Select Amber</button>
-                        <div class="flex flex-row justify-center items-center theme-color-4-fc h-11 h-fit cursor-pointer font-semibold text-base">Ask Me a Question</div>
+                    <div class="flex flex-col buttons">
+                        <button class="primary h-fit mb-7.5" onclick="onSelectSalesPerson()">Select Amber</button>
+                        <div class="flex flex-row justify-center items-center theme-color-4-fc h-11 h-fit cursor-pointer font-semibold text-base">Ask Me A Question</div>
                     </div>
                 </div>
 
                 <div class="flex flex-row mt-8">
                     <div class="flex flex-col mr-32">
-                        <div class="common-color-3-fc text-lg font-semibold">Total Reviews</div>
+                        <div class="total">Total Reviews</div>
                         <div class="text-2xl theme-color-4-fc font-bold">1 986</div>
                     </div>
                     <div class="flex flex-col mr-32">
-                        <div class="common-color-3-fc text-lg font-semibold">Reviews Last Month</div>
+                        <div class="total">Reviews Last Month</div>
                         <div class="text-2xl theme-color-4-fc font-bold">86</div>
                     </div>
                     <div class="flex flex-col mr-32">
-                        <div class="common-color-3-fc text-lg font-semibold">Started in Industry</div>
+                        <div class="total">Started In Industry</div>
                         <div class="text-2xl theme-color-4-fc font-bold">2021</div>
                     </div>
                 </div>
@@ -163,8 +163,8 @@
                 <div class="h-px mt-7 w-full separator"></div>
 
                 <div class="mt-7 flex flex-row">
-                    <div class="flex flex-col bio mr-4">
-                        <h4 class="mb-1">Bio</h4>
+                    <div class="flex flex-col bio bio-block">
+                        <div class="mb-1">Bio</div>
                         <div class="card-expert">
                             <div class="info mb-2">
                                 Hi and thank you for learning more about me.
@@ -192,7 +192,16 @@
                                 <div class="flex flex-row review-details mt-4">
                                     <img src="{{ asset('img/google.png') }}" alt="google">
                                     <div class="ml-4 flex flex-col">
-                                        <div class="review-date">14 OCT 2020</div>
+                                        <div class="flex flex-row">
+                                            <div class="review-date">14 OCT 2020</div>
+                                            <div class="ml-3 rating flex flex-row">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>
+                                        </div>
                                         <div class="review-creator">Jordan Wilkinson</div>
                                     </div>
                                 </div>
@@ -204,7 +213,7 @@
                                     </button>
                                     <button class="link">
                                         Next Review
-                                        <span class="ml-2"><i class="fa-solid fa-arrow-left"></i></span>
+                                        <span class="ml-2"><i class="fa-solid fa-arrow-right"></i></span>
                                     </button>
                                 </div>
                             </div>
@@ -214,16 +223,16 @@
                             <div class="card-expert gallery">
                                 <div class="flex flex-row">
                                     <div class="image">
-                                        <img class="mt-2.5" src="https://via.placeholder.com/164x110" alt="img">
+                                        <img src="https://via.placeholder.com/164x110" alt="img">
                                     </div>
                                     <div class="image">
-                                        <img class="mt-2.5" src="https://via.placeholder.com/164x110" alt="img">
+                                        <img src="https://via.placeholder.com/164x110" alt="img">
                                     </div>
                                     <div class="image">
-                                        <img class="mt-2.5" src="https://via.placeholder.com/164x110" alt="img">
+                                        <img src="https://via.placeholder.com/164x110" alt="img">
                                     </div>
                                     <div class="image">
-                                        <img class="mt-2.5" src="https://via.placeholder.com/164x110" alt="img">
+                                        <img src="https://via.placeholder.com/164x110" alt="img">
                                     </div>
                                 </div>
                             </div>
@@ -234,8 +243,6 @@
         </div>
     </div>
 @endsection
-
-@include('modals.question');
 
 @section('scripts')
     <script type="text/javascript">

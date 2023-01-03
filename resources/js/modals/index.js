@@ -1,1 +1,1 @@
-require('./question.dialog');
+require('./dialog');

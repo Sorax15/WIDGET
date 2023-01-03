@@ -1,62 +1,36 @@
 const navbar = document.getElementById("sidebar");
-const logo = document.getElementById("logo");
 const toogleButton = document.getElementById("toogle-icon");
-const name = document.getElementById('sidebar').querySelectorAll("header .name");
-const progress = document.getElementById("progress");
-const progressClose = document.getElementById("progressClose");
-
-toogleButton.addEventListener("click", toogleSidebar);
+const preloader = document.getElementById('load-page');
 
 (function () {
     const status = localStorage.getItem('statusSideBar');
-
-    if (status === 'Open') {
-        return settingSidebarLoad();
-    }
-
-    navbar.classList.contains('close') ? showSmallProgress() : showFullProgress();
+    if (status === 'Open') navbar.classList.add('close')
 }())
 
-function settingSidebarLoad() {
-    navbar.classList.add('close');
-    name[0].style.display = 'none';
-    logo.style.display = 'none';
-    showSmallProgress()
-}
+toogleButton.addEventListener("click", () => {
+    onShowPreload();
 
-function toogleSidebar() {
-    if (name && name.length) {
-        if (navbar.classList.contains('close')) {
-            setTimeout(() => {
-                changeStatusSideBar('Hide');
-                name[0].style.display = 'block';
-                logo.style.display = 'block';
-            }, 300)
-            showFullProgress()
-        } else {
-            changeStatusSideBar('Open');
-            name[0].style.display = 'none';
-            logo.style.display = 'none';
-            showSmallProgress()
-        }
-    }
+    navbar.classList.contains('close') ?
+        changeStatusSideBar('Hide') :
+        changeStatusSideBar('Open');
+
     navbar.classList.toggle('close');
-}
+});
 
-function showSmallProgress() {
-    setTimeout(() => {
-        progressClose.style.display = 'block';
-    }, 300)
-    progress.style.display = 'none';
-}
+function onShowPreload() {
+    preloader.style.display = 'block';
+    document.body.classList.add('load-show');
 
-function showFullProgress() {
     setTimeout(() => {
-        progress.style.display = 'block';
-    }, 300)
-    progressClose.style.display = 'none';
+        preloader.style.display = 'none';
+        document.body.classList.remove('load-show')
+    }, 200)
 }
 
 function changeStatusSideBar(status) {
     localStorage.setItem('statusSideBar', status);
 }
+
+
+
+
